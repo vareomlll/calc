@@ -20,26 +20,40 @@ namespace calc
             {
                 //я второй раз работаю в VS после PyCharm и я уже обожаю VS он же просто дописывает код за мной
                 case "+":
-                    n = a + b; 
+                    n = a + b;
+                    Console.WriteLine(n);
                 break;
 
                 case "-":
                     n = a - b;
+                    Console.WriteLine(n);
                 break;
 
                 case "*":
                 n = a * b;
+                    Console.WriteLine(n);
                 break;
 
                 case "/":
+                if (b == 0)
+                    {
+                        Console.WriteLine("неа");
+                        break;
+                    }
                 n = a / b;
+                Console.WriteLine(n);
                 break;
 
-                case "%":   
-                n = a % b;
+                case "%":
+                if (b == 0)
+                    {
+                        Console.WriteLine("неа");
+                        break;
+                    }
+                    n = a % b;
+                Console.WriteLine(n);
                 break;
             }
-            Console.WriteLine(n);
             Console.ReadLine();
         }
     }
