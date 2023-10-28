@@ -34,16 +34,6 @@ namespace calc
                     Console.WriteLine(n);
                 break;
 
-                case "/":
-                if (b == 0)
-                    {
-                        Console.WriteLine("неа");
-                        break;
-                    }
-                n = a / b;
-                Console.WriteLine(n);
-                break;
-
                 case "%":
                 if (b == 0)
                     {
